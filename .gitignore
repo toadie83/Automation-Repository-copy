@@ -1,0 +1,77 @@
+# OS
+.DS_Store
+
+# Project dependencies
+.cache
+node_modules
+!packages/web/plugins/gatsby-mdx/node_modules
+yarn-error.log
+npm-debug.log
+yarn.lock
+
+# Build directory
+public
+build
+dist
+tests_output
+
+#appium
+appium/config/app
+
+# Env
+.env
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Android/IntelliJ
+.idea
+.gradle
+local.properties
+*.iml
+
+# BUCK
+buck-out
+\.buckd/
+*.keystore
+
+# fastlane
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+# Vscode launcher
+.vscode/
+
+#Logs
+chromedriver.log
+selenium-server.log
+
+#Docs
+docs
+
+#browserstack
+browserstack.err
+local.log
+
+#allureReports
+allure-results
+allure-report

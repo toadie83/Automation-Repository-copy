@@ -1,6 +1,6 @@
 const ContactUsPage = require("./ContactUsPage.cjs");
 
-describe("contactUsTest", () => {
+describe("contact Page Test", () => {
   let contactUsPage;
 
   beforeEach(async () => {

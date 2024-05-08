@@ -1,6 +1,6 @@
 const HomePage = require("./HomePage.cjs");
 
-describe("HomePageTest", () => {
+describe("Home Page Test", () => {
   it("tests HomePageTest", async () => {
     const homePage = new HomePage(browser);
 

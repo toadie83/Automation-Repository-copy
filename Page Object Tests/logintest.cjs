@@ -1,6 +1,6 @@
 const LoginPage = require("./LoginPage.cjs");
 
-describe("LoginPage", () => {
+describe("Login Page Test", () => {
   let loginPage;
 
   beforeEach(async () => {

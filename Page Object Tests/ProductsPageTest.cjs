@@ -1,6 +1,6 @@
 const ProductsPage = require("./ProductsPage.cjs");
 
-describe("ProductPageTest2", () => {
+describe("Product Page Test", () => {
   it("tests ProductPageTest2", async () => {
     const productsPage = new ProductsPage(browser);
 

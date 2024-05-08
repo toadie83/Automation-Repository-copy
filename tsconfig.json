@@ -23,7 +23,7 @@
   "include": [
     "test",
     "wdio.conf.ts",
-    "Page Object Tests/ProductsPage.js",
+    "Page Object Tests/ProductsPage.cjs",
     "Page Object Tests/Additional tests/launchchrome.cjs",
     "Additional tests/initial_test.js",
     "Additional tests/initial_test.js"

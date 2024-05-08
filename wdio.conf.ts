@@ -30,7 +30,9 @@ export const config: Options.Testrunner = {
   // of the config file unless it's absolute.
   //
   specs: [
-    "./Page Object Tests/contact_us.cjs",
+    "./Page Object Tests/ProductsPageTest.cjs",
+    //"./Page Object Tests/HomePageTest.cjs",
+    //"./Page Object Tests/contactUsTest.cjs",
     //"./Page Object Tests/logintest.cjs",
     // "./test/Sign up and delete user test.js",
     // "./test/login and logout.js",

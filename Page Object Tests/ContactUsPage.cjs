@@ -10,18 +10,33 @@ class ContactUsPage {
     );
   }
 
-  async fillContactForm(name, email, subject, message) {
-    await (await this.browser.$("[data-qa='name']")).click();
-    await (await this.browser.$("[data-qa='name']")).setValue(name);
+  async fillNameInput(name) {
+    const nameInput = await this.browser.$('//*[@data-qa="name"]');
+    await nameInput.click();
+    await nameInput.setValue(name);
+  }
 
-    await (await this.browser.$("[data-qa='email']")).click();
-    await (await this.browser.$("[data-qa='email']")).setValue(email);
+  async fillEmailInput(email) {
+    const emailInput = await this.browser.$('//*[@data-qa="email"]');
+    await emailInput.click();
+    await emailInput.setValue(email);
+  }
 
-    await (await this.browser.$("[data-qa='subject']")).click();
-    await (await this.browser.$("[data-qa='subject']")).setValue(subject);
+  async fillSubjectInput(subject) {
+    const subjectInput = await this.browser.$('//*[@data-qa="subject"]');
+    await subjectInput.click();
+    await subjectInput.setValue(subject);
+  }
 
-    await (await this.browser.$("[data-qa='message']")).click();
-    await (await this.browser.$("[data-qa='message']")).setValue(message);
+  async fillMessageInput(message) {
+    const messageInput = await this.browser.$('//*[@data-qa="message"]');
+    await messageInput.click();
+    await messageInput.setValue(message);
+  }
+
+  async clickSubmitButton() {
+    const submitButton = await this.browser.$('//*[@data-qa="submit-button"]');
+    await submitButton.click();
   }
 }
 

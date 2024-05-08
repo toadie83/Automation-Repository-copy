@@ -30,10 +30,10 @@ export const config: Options.Testrunner = {
   // of the config file unless it's absolute.
   //
   specs: [
-    "./Page Object Tests/ProductsPageTest.cjs",
-    //"./Page Object Tests/HomePageTest.cjs",
-    //"./Page Object Tests/contactUsTest.cjs",
     //"./Page Object Tests/logintest.cjs",
+    //"./Page Object Tests/HomePageTest.cjs",
+    //"./Page Object Tests/ProductsPageTest.cjs",
+    //"./Page Object Tests/contactUsTest.cjs",
     // "./test/Sign up and delete user test.js",
     // "./test/login and logout.js",
     // "./test/product lookup.js",
@@ -42,8 +42,21 @@ export const config: Options.Testrunner = {
   ],
 
   suites: {
-    Suite1: [`(Suite directory here!!!)`],
+    suite1: [
+      "./Page Object Tests/logintest.cjs",
+      "./Page Object Tests/HomePageTest.cjs",
+      "./Page Object Tests/ProductsPageTest.cjs",
+      "./Page Object Tests/contactUsTest.cjs",
+    ],
+    suite2: [
+      "./test/Sign up and delete user test.js",
+      "./test/login and logout.js",
+      "./test/product lookup.js",
+      "./test/Add to Basket and Edit Basket.js",
+      "./test/Checkout, including Payment Details.js",
+    ],
   },
+
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
